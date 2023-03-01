@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'SF-Light';
+    src: url("SFUIDisplay-Light.ttf");
+  }
+@font-face {
+    font-family: 'SF-Semibold';
+    src: url('SFUIText-Semibold.otf');
+}
+
+.main-box{
+    max-width: 400px;
+    height: 650px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1.5px solid black;
+}
+/*#05baab*/
+.inner-box{
+    margin:30px 30px;
+    max-width: 340px;
+    height: 560px;
+    display: grid;
+    gap:15px;
+    grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
+}
+.logo-box{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-box img{
+    position: relative;
+    width: 100px;
+    height: 70px;
+}
+.login-box{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    width: 100%;
+    height:200px;
+}
+.username-box{
+    display: flex;
+    position: relative;
+    width:90%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.username-box input{
+    outline: 0;
+    width: 100%;
+    background: none;
+    color: #05baab;
+    border: none;
+    font-family: SF-Light;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    bottom: 0%;
+    box-shadow: none;
+}
+.username-box input:focus~label,
+.username-box input:valid~label
+{
+    transform: translateY(-23px);
+    font-size: 15px;
+    color : black ;
+    border : none;
+}
+
+.username-box label{
+    position: absolute;
+    font-family: SF-Light;
+    color: black;
+    letter-spacing: 1px;
+    left: 0%;
+    margin-bottom: 7px;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.password-box{
+    display: flex;
+    position: relative;
+    width:90%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.password-box input{
+    outline: none;
+    width: 100%;
+    font-family: SF-Light;
+    background: none;
+    border: 0;
+    color: #05baab;
+    border-bottom: 1px solid black;
+    bottom: 0%;
+}
+.password-box input:focus ~ label,
+.password-box input:valid ~ label
+{
+    transform: translateY(-23px);
+    font-size: 15px;
+    color : black ;
+    border : none;
+}
+.password-box label{
+    position: absolute;
+    font-family: SF-Light;
+    color: black;
+    letter-spacing: 1px;
+    left: 0%;
+    margin-bottom: 7px;
+    transition: all 0.5s ease;
+}
+.password-box input:invalid{
+    outline:0;
+}
+.forgot-pass-box{
+    width: 100%;
+    position: relative;
+    font-family: SF-Light;
+    color: #05baab;
+}
+.forgot-pass-box p{
+    position: relative;
+    left: 4.5%;
+    bottom: 30%;
+    letter-spacing: 0.9px;
+}
+.register-link-box{
+    display: flex;
+    gap: 5px;
+}
+.register-p{
+    position: relative;
+    color: black;
+    left: 5%;
+    font-family: SF-Light;
+}
+.Sign-up{
+    position: relative;
+    color: black;
+    left: 5%;
+    font-family: SF-Semibold;
+    letter-spacing: 0.5px;
+}
+.app-link-box{
+    width: 100%;
+    position: relative;
+    height: auto;
+    bottom: -25%;
+}
+.app-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.app-text p{
+    right:3%;
+    position: relative;
+    color: black;
+    font-family: SF-Light;
+}
+.logos{
+    width: 100%;
+    display: grid;
+    height:120px;
+    grid-template-columns: 1fr 1fr;
+}
+.logos img{
+    position: relative;
+    left: 8%;
+    width: 120px;
+    height: 70px;
+}
+.button-box{
+    position: relative;
+    left:5%;
+    height: 30px;
+    width: 100%;
+}
+.button-box input{
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    background-color: #05baab;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    font-family: SF-Semibold;
+}

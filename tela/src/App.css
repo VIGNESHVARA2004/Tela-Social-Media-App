@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SF-Bold";
+  src: url("SFUIText-BoldG3.otf");
+}
+@font-face {
+  font-family: "SF-Regular";
+  src: url("SFUIText-RegularG2.otf");
+}
+@font-face {
+  font-family: "SF-Semibold";
+  src: url("SFUIText-Semibold.otf");
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}

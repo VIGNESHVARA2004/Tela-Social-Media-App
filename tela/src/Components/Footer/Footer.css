@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "SF-Semibold";
+    src: url("SFUIText-Semibold.otf");
+  }
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0%;
+    justify-content: center;
+}
+.inner-footer-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+.top-box{
+    display: flex;
+    width: 100%;
+    column-gap: 50%;
+    top: 10%;
+    justify-content: center;
+    font-family: SF-Semibold;
+}
+.bottom-box{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    word-spacing:3px;
+    font-family: SF-Light;
+    
+}
