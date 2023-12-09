@@ -32,6 +32,15 @@ Tela is a social media app designed to replicate the Instagram experience. Users
   
 </p>
 
+## Features
+
+- **Follow Others:** Connect with friends and stay updated on their posts.
+- **Messaging:** Send direct messages to other users.
+- **Post Content:** Share photos and videos with your followers.
+- **Notifications:** Receive real-time notifications for activity on your account.
+- **Profiles:** View and customize your own profile and explore others.
+- **Interactions:** Like and comment on posts to engage with content.
+
 ## Getting Started
 
 Follow these steps to get the project up and running:
@@ -49,15 +58,6 @@ Follow these steps to get the project up and running:
 ![Screenshot (257)](https://github.com/VIGNESHVARA2004/Tela-FrontEnd/assets/110531516/87a61328-c204-4391-ad6e-94c20f03a489)
 ![Screenshot (196)](https://github.com/VIGNESHVARA2004/Tela-FrontEnd/assets/110531516/8ee4a018-ac42-4977-853f-9518c99be3f3)
 ![Screenshot (197)](https://github.com/VIGNESHVARA2004/Tela-FrontEnd/assets/110531516/840e56e0-2b1e-4cdc-9327-73933922a084)
-
-## Features
-
-- **Follow Others:** Connect with friends and stay updated on their posts.
-- **Messaging:** Send direct messages to other users.
-- **Post Content:** Share photos and videos with your followers.
-- **Notifications:** Receive real-time notifications for activity on your account.
-- **Profiles:** View and customize your own profile and explore others.
-- **Interactions:** Like and comment on posts to engage with content.
 
 ## Contributing
 
