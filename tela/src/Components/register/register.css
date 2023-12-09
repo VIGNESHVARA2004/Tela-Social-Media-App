@@ -1,155 +1,188 @@
-.main-box{
-    max-width: 400px;
-    height: 700px;
+.register-outer-div {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+  
+  .register-main-box {
+    width: 400px;
+    height: 800px;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 1.5px solid black;
-}
-/*#05baab*/
-.register-inner-box{
-    margin:30px 30px;
-    max-width: 340px;
+  }
+  
+  /*#05baab*/
+  .register-inner-box {
+    width: 400px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 1fr 1fr;
     gap: 10px;
-    height: 560px;
-}
-.logo-box{
+    height: 800px;
+  }
+  
+  .register-logo-box {
     display: flex;
     width: 100%;
     height: 120px;
     justify-content: center;
     align-items: center;
-}
-.logo-box img{
+  }
+  
+  .register-logo-box img {
     position: relative;
     width: 100px;
     height: 70px;
-}
-.reg-login-box{
+  }
+  
+  .register-login-box {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    height: 300px;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    height: 400px;
     width: 100%;
-}
-.input-box{
+  }
+  
+  .register-input-box {
     display: flex;
     position: relative;
-    width:90%;
+    width: 90%;
     justify-self: center;
     justify-content: center;
     align-items: center;
-}
-.input-box input{
+  }
+  
+  .register-input-box input {
     outline: none;
     width: 100%;
     font-family: SF-Light;
     background: none;
     border: 0;
-    color: #05baab;
+    color: #8e8e8e;
     border-bottom: 1px solid black;
     bottom: 0%;
-}
-.input-box input:focus ~ label,
-.input-box input:valid+label{
-    transform: translateY(-23px);
+    font-size: 16px;
+    box-shadow: 0px 8px 15px -8px #111; 
+  }
+  
+  .register-input-box input:focus ~ label,
+  .register-input-box input:valid+label {
+    transform: translateY(-27px);
     font-size: 15px;
-    color : black ;
-}
-
-.input-box label{
-    position: absolute;
-    font-family: SF-Light;
     color: black;
-    letter-spacing: 1px;
+  }
+  
+  .register-input-box label {
+    position: absolute;
+    font-family: SF-Regular;
+    color: black;
     left: 0%;
     margin-bottom: 7px;
     transition: all 0.5s ease;
-}
-.input-box input:invalid{
-    outline:0;
-}
-
-.policy-box{
-    width: 100%;
+    font-size: 18px;
+  }
+  
+  .register-input-box input:invalid {
+    outline: 0;
+  }
+  
+  .register-policy-box {
+    width: 90%;
     position: relative;
-    font-family: SF-Light;
-}
-.policy-box p{
+    font-family: SF-Regular;
+  }
+  
+  .register-policy-box p {
     position: relative;
     font-size: 14px;
     left: 5%;
-    letter-spacing: 0.9px;
-}
-.policy-box p span{
-    color: #05baab;
-}
-.register-link-box{
+  }
+  
+  .register-policy-box p span {
+    font-family: SF-SemiBold;
+  }
+  
+  .register-link-box {
     display: flex;
     gap: 5px;
-}
-.register-p{
+  }
+  
+  .register-p {
     position: relative;
     color: black;
     left: 5%;
-    font-family: SF-Light;
-}
-.register-p span{
-    color: #05baab;
-}
-.Sign-up{
+    font-family: SF-Regular;
+  }
+  
+  .register-p span {
+    font-family: SF-SemiBold;
+  }
+  
+  .register-Sign-up {
     position: relative;
     color: black;
     left: 5%;
     font-family: SF-Semibold;
     letter-spacing: 0.5px;
-}
-.reg-app-link-box{
+  }
+  
+  .register-app-link-box {
     width: 100%;
     position: relative;
     height: auto;
     bottom: 6%;
-}
-.app-text{
+  }
+  
+  .register-app-text {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 30px;
-}
-.app-text p{
-    right:3%;
+  }
+  
+  .register-app-text p {
+    right: 3%;
     position: relative;
     color: black;
     font-family: SF-Light;
-}
-.logos{
+  }
+  
+  .register-logos {
     width: 100%;
     display: grid;
-    height:120px;
+    height: 120px;
     grid-template-columns: 1fr 1fr;
-}
-.logos img{
+  }
+  
+  .register-logos img {
     position: relative;
     left: 8%;
     width: 120px;
     height: 70px;
-}
-.button-box{
+  }
+  
+  .register-button-box {
     position: relative;
-    left:5%;
+    left: 5%;
     height: 30px;
     width: 100%;
-}
-.button-box input{
+  }
+  
+  .register-button-box input {
     width: 90%;
     height: 35px;
     font-size: 16px;
     background-color: #05baab;
     color: white;
     border: none;
-    border-radius: 7px;
     letter-spacing: 0.5px;
     font-family: SF-Semibold;
-}
+  }
+  

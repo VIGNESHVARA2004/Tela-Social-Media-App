@@ -4,12 +4,11 @@
   }
 .footer-main{
     display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
+    bottom: 0;
+    width: 100vw;
     height: 100px;
     justify-content: center;
+    overflow: hidden;
 }
 .inner-footer-box{
     width: 100%;
@@ -21,7 +20,7 @@
 .top-box{
     display: flex;
     width: 100%;
-    column-gap: 50%;
+    column-gap: 10vw;
     top: 10%;
     justify-content: center;
     font-family: SF-Semibold;

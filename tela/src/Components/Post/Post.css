@@ -1,0 +1,163 @@
+.post__container {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.post__container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.post__header {
+  height: 60px;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.post__image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.post__username {
+  font-family: SF-SemiBold;
+  margin-left: 10px;
+  color: #333;
+  font-size: 21px;
+}
+
+.post__analytics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.post_reactimage {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.post_reactimage:hover {
+  transform: scale(1.2);
+}
+
+.post__likes {
+  font-weight: bold;
+  margin-left: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.post_comment {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_comment .post__delete-icon {
+  color: #999;
+  cursor: pointer;
+}
+
+.post_comment .post__delete-icon:hover {
+  color: red;
+}
+
+.post_comment .post__delete-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.post_comment .post__delete-icon-container:hover {
+  transform: scale(1.2);
+}
+
+
+.post__commentbox {
+  height: 56px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  color: #555;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+  resize: none;
+}
+
+.post__commentbox::placeholder {
+  color: #999;
+}
+
+.post__commentbox:focus {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post__commentbox:focus::placeholder {
+  color: transparent;
+}
+
+.post__more {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #999;
+  cursor: pointer;
+}
+
+.post__delete-icon {
+  color: #999;
+  cursor: pointer;
+}
+
+.post__delete-icon:hover {
+  color: red;
+}
+.post_reacticon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.post_reacticon.active {
+  color: red;
+  transform: scale(1.2);
+}

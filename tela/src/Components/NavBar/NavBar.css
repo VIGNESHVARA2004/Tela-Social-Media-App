@@ -1,0 +1,60 @@
+.navbar__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  
+  .navbar__barContent {
+    height: 54px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .navbar_logo {
+    margin-top: 4px;
+    margin-left: 45px;
+    margin-right: auto;
+  }
+  
+  .navbar__img {
+    margin: 15px 10px;
+  }
+  
+  .navbar__searchBar {
+    height: 30px;
+    width: 100%;
+    max-width: 215px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 5px;
+    font-family: SF-Regular;
+    letter-spacing: 0.7px;
+  }
+  
+  .navbar__navItems {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .searchResults {
+    margin-top: 10px;
+  }
+  
+  .userLink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar_logo {
+      margin-left: 0px;
+    }
+  }

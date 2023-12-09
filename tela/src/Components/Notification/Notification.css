@@ -1,0 +1,48 @@
+.noti-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+}
+
+.notifications__container {
+  width: 400px;
+  height: 750px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+.notifications__container::-webkit-scrollbar{
+  display: none;
+}
+
+
+.notifications__header {
+  font-size: 21px;
+  font-family: SF-SemiBold;
+  margin-bottom: 10px;
+}
+
+.notification__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.notification__avatar {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.notification__message {
+  font-family: SF-Medium;
+  font-size: 16px;
+}
+
+/* Additional styles for the Avatar component */
+.MuiAvatar-root {
+  width: 40px;
+  height: 40px;
+}

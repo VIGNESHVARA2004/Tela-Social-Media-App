@@ -1,0 +1,145 @@
+.message-container {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+  }
+
+  .message__heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .message {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message__search {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .message__search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: transparent;
+  }
+  
+  .message__header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .message__back-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .message__back-icon,
+  .message__send-icon {
+    color: #757575;
+    font-size: 20px;
+  }
+  
+  .message__username {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .message__user-list {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .message__user {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .message__user:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .message__user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .message__conversation {
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .message__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .message__item {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .message__item--from {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+  }
+  
+  .message__item--to {
+    background-color: #039be5;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .message__input {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .message__input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: transparent;
+  }
+  
+  .message__send-icon {
+    cursor: pointer;
+    color: #039be5;
+    font-size: 20px;
+  }
+  

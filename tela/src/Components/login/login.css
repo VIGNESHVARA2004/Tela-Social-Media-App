@@ -2,200 +2,211 @@
     font-family: 'SF-Light';
     src: url("SFUIDisplay-Light.ttf");
   }
-@font-face {
+  
+  @font-face {
     font-family: 'SF-Semibold';
     src: url('SFUIText-Semibold.otf');
-}
-.login-outer-div{
+  }
+  
+  .login-outer-div {
+    display: flex;
     width: 100vw;
-    height: 95vw;
+    height: 90vh;
     justify-content: center;
     align-items: center;
-}
-.main-box{
-    max-width: 400px;
-    height: 650px;
-    position: relative;
-    border: 1.5px solid black;
-}
-/*#05baab*/
-.inner-box{
-    margin:30px 30px;
-    max-width: 340px;
-    height: 560px;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+  
+  .login-outer-div {
+    /* Add other styles as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-box {
+    width: 400px;
+    height: 710px;
+    position: absolute;
+  }
+  
+  .inner-box {
+    width: 400px;
+    height: 700px;
     display: grid;
-    gap:15px;
+    gap: 15px;
     grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
-}
-.logo-box{
+  }
+  
+  .logo-box {
     display: flex;
     width: 100%;
     height: 120px;
     justify-content: center;
     align-items: center;
-}
-.logo-box img{
+    
+  }
+  
+  .logo-box img {
     position: relative;
     width: 100px;
     height: 70px;
-}
-.login-box{
+  }
+  
+  .login-box {
     display: grid;
-    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-rows: 2fr 2fr 1fr;
     width: 100%;
-    height:200px;
-}
-.username-box{
+    height: 300px;
+    align-items: center;
+  }
+  
+  .username-box,
+  .password-box {
     display: flex;
     position: relative;
-    width:90%;
+    width: 90%;
     justify-self: center;
     justify-content: center;
     align-items: center;
-}
-.username-box input{
-    outline: 0;
+  }
+  
+  .username-box input,
+  .password-box input {
+    outline: none;
     width: 100%;
     background: none;
-    color: #05baab;
+    color: #8e8e8e;
     border: none;
-    font-family: SF-Light;
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-family: 'SF-Light';
+    font-size: 16px;
     border-bottom: 1px solid black;
     bottom: 0%;
-    box-shadow: none;
-}
-.username-box input:focus~label,
-.username-box input:valid~label
-{
-    transform: translateY(-23px);
+    box-shadow: 0px 8px 15px -8px #111; 
+  }
+  
+  .username-box input:focus~label,
+  .username-box input:valid~label,
+  .password-box input:focus~label,
+  .password-box input:valid~label {
+    transform: translateY(-27px);
     font-size: 15px;
-    color : black ;
-    border : none;
-}
-
-.username-box label{
-    position: absolute;
-    font-family: SF-Light;
     color: black;
-    letter-spacing: 1px;
+    border: none;
+  }
+  
+  .username-box label,
+  .password-box label {
+    position: absolute;
+    color: black;
     left: 0%;
     margin-bottom: 7px;
     pointer-events: none;
     transition: all 0.5s ease;
-}
-.password-box{
-    display: flex;
-    position: relative;
-    width:90%;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-}
-.password-box input{
-    outline: none;
-    width: 100%;
-    font-family: SF-Light;
-    background: none;
-    border: 0;
-    color: #05baab;
-    border-bottom: 1px solid black;
-    bottom: 0%;
-}
-.password-box input:focus ~ label,
-.password-box input:valid ~ label
-{
-    transform: translateY(-23px);
-    font-size: 15px;
-    color : black ;
-    border : none;
-}
-.password-box label{
-    position: absolute;
-    font-family: SF-Light;
-    color: black;
-    letter-spacing: 1px;
-    left: 0%;
-    margin-bottom: 7px;
-    transition: all 0.5s ease;
-}
-.password-box input:invalid{
-    outline:0;
-}
-.forgot-pass-box{
+    font-family: SF-Regular;
+    font-size: 18px;
+  }
+  
+  .password-box input:invalid {
+    outline: 0;
+  }
+  
+  .forgot-pass-box {
     width: 100%;
     position: relative;
-    font-family: SF-Light;
+    font-family: SF-SemiBold;
     color: #05baab;
-}
-.forgot-pass-box p{
+  }
+  
+  .forgot-pass-box p {
     position: relative;
     left: 4.5%;
-    bottom: 30%;
-    letter-spacing: 0.9px;
-}
-.register-link-box{
+    align-items: center;
+  }
+
+  .forgot-pass-link {
+    position: relative;
+    left: 4.5%;
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  .register-link-box {
     display: flex;
     gap: 5px;
-}
-.register-p{
+    font-family: SF-SemiBold;
+  }
+  
+  .login-register-p,
+  .Sign-up {
     position: relative;
     color: black;
-    left: 5%;
-    font-family: SF-Light;
-}
-.Sign-up{
-    position: relative;
-    color: black;
-    left: 5%;
-    font-family: SF-Semibold;
-    letter-spacing: 0.5px;
-}
-.app-link-box{
+    font-family: SF-Regular;
+    margin-left: 5%;
+  }
+  .Sign-up {
+    font-family: SF-SemiBold;
+    margin-left: 5px;
+  }
+  
+  .app-link-box {
     width: 100%;
     position: relative;
     height: auto;
     bottom: -25%;
-}
-.app-text{
+  }
+  
+  .app-text {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 30px;
-}
-.app-text p{
-    right:3%;
+    
+  }
+  
+  .app-text p {
+    right: 3%;
     position: relative;
     color: black;
-    font-family: SF-Light;
-}
-.logos{
+    font-family: SF-Regular;
+  }
+  
+  .logos {
     width: 100%;
     display: grid;
-    height:120px;
+    height: 120px;
     grid-template-columns: 1fr 1fr;
-}
-.logos img{
+  }
+  
+  .logos img {
     position: relative;
     left: 8%;
     width: 120px;
     height: 70px;
-}
-.button-box{
+  }
+  
+  .button-box {
     position: relative;
-    left:5%;
+    left: 5%;
     height: 30px;
     width: 100%;
-}
-.button-box input{
+  }
+  
+  .button-box input {
     width: 90%;
     height: 35px;
     font-size: 16px;
     background-color: #05baab;
     color: white;
     border: none;
-    border-radius: 7px;
-    letter-spacing: 0.5px;
-    font-family: SF-Semibold;
-}
+    font-family: 'SF-Semibold';
+  }
+  
