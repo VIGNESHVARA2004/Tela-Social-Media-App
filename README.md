@@ -4,7 +4,7 @@
 
 ## Overview
 
-Tela is a social media app designed to replicate the Instagram experience. Users can follow others, send messages, post content, receive notifications, view profiles, and interact with posts by liking and commenting.
+"Tela" is a full-stack Social Media App designed to replicate the functionality of Instagram. Users can follow others, send messages, post content, receive notifications, view profiles, like, and comment on posts.
 
 ## Technologies Used
 
@@ -29,6 +29,12 @@ Tela is a social media app designed to replicate the Instagram experience. Users
   
   <!-- React Icons -->
   <img src="https://img.shields.io/badge/React%20Icons-4.8.0-61DAFB?style=flat&logo=react&logoColor=white" alt="React Icons">
+
+  <!-- Spring Boot -->
+  <img src="https://img.shields.io/badge/Spring%20Boot-Latest-6DB33F?style=flat&logo=spring&logoColor=white" alt="Spring Boot">
+
+  <!-- MySQL -->
+  <img src="https://img.shields.io/badge/MySQL-Latest-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL">
   
 </p>
 
