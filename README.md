@@ -1,6 +1,6 @@
 # Tela - Social Media App
 
-![Logo](https://github.com/VIGNESHVARA2004/Tela-FrontEnd/assets/110531516/ea8d3b2a-8180-422a-a7db-245b5f9a76cf)
+<img src="https://github.com/VIGNESHVARA2004/Tela-FrontEnd/assets/110531516/ea8d3b2a-8180-422a-a7db-245b5f9a76cf" alt="Tela Logo" width="400" height="200">
 
 ## Overview
 
