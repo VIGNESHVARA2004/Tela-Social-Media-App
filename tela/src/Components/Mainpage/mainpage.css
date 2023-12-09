@@ -1,0 +1,13 @@
+.Home-outer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.Home-content-outer{
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-content: center;
+}

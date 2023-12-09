@@ -14,7 +14,7 @@ export default function Register() {
   const senddb=(e)=>{
     e.preventDefault()
     const details={email,fullname,password,username}
-    if(email.length==0||password.length==0||fullname.length==0||username.length==0){
+    if(email.length===0||password.length===0||fullname.length===0||username.length===0){
       alert("Enter All fields")
     }
     else{

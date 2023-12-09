@@ -1,0 +1,15 @@
+.LogoBar-outer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoBar-inner{
+    width: 65px;
+    height: 70px;
+}
+.LogoBar-inner img{
+    width: auto;
+    height: auto;
+}

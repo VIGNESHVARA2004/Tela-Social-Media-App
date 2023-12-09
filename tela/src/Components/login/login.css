@@ -6,14 +6,16 @@
     font-family: 'SF-Semibold';
     src: url('SFUIText-Semibold.otf');
 }
-
+.login-outer-div{
+    width: 100vw;
+    height: 95vw;
+    justify-content: center;
+    align-items: center;
+}
 .main-box{
     max-width: 400px;
     height: 650px;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     border: 1.5px solid black;
 }
 /*#05baab*/

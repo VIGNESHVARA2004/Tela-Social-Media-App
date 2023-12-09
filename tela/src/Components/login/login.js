@@ -30,37 +30,39 @@ export default function Login() {
     }
   }
   return (
-    <div className='main-box'>
-        <div className='inner-box'>
-            <div className='logo-box'><img alt ='logo' src={Image}/></div>
-            <div className='login-box'>
-              <div className='username-box'>
-                <input type='text' value={username} onChange={(e) => setUsername(e.target.value)}required></input>
-                <label>Username</label>
+    <div className='login-outer-div'>
+      <div className='main-box'>
+          <div className='inner-box'>
+              <div className='logo-box'><img alt ='logo' src={Image}/></div>
+              <div className='login-box'>
+                <div className='username-box'>
+                  <input type='text' value={username} onChange={(e) => setUsername(e.target.value)}required></input>
+                  <label>Username</label>
+                </div>
+                <div className='password-box'>
+                  <input type='password' value={password} onChange={(e) => setpassword(e.target.value)} required></input>
+                  <label>Password</label>
+                </div>
+                <div className='forgot-pass-box'>
+                  <p>Forgot Password?</p>
+                </div>
               </div>
-              <div className='password-box'>
-                <input type='password' value={password} onChange={(e) => setpassword(e.target.value)} required></input>
-                <label>Password</label>
+              <div className='button-box'>
+                  <input type='button' value="Log in" onClick={loginChecker}></input>
               </div>
-              <div className='forgot-pass-box'>
-                <p>Forgot Password?</p>
+              <div className='register-link-box'>
+                <p className='register-p'>Don't have an account? </p>
+                <p className='Sign-up' onClick={()=> navigate("/Register")}>Sign up</p>
               </div>
-            </div>
-            <div className='button-box'>
-                <input type='button' value="Log in" onClick={loginChecker}></input>
-            </div>
-            <div className='register-link-box'>
-              <p className='register-p'>Don't have an account? </p>
-              <p className='Sign-up' onClick={()=> navigate("/Register")}>Sign up</p>
-            </div>
-            <div className='app-link-box'>
-              <div className='app-text'><p>Get the app</p></div>
-              <div className='logos'>
-                <img alt='' src={Apple}/>
-                <img alt='' src={Google}/>
+              <div className='app-link-box'>
+                <div className='app-text'><p>Get the app</p></div>
+                <div className='logos'>
+                  <img alt='' src={Apple}/>
+                  <img alt='' src={Google}/>
+                </div>
               </div>
-            </div>
-        </div>
+          </div>
+      </div>
     </div>
   )
 }
